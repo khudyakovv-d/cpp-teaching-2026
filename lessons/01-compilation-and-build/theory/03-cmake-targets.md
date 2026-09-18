@@ -150,6 +150,6 @@ main.cpp    → объектный файл ────────────
 
 `main.cpp` при этом компилировать повторно не потребуется.
 
-Далее: [демонстрационный проект задачи 0а](../../lab0a/README.md). В нём те же команды применяются уже к реальным файлам задачи.
+Далее: [демонстрационный проект задачи 0а](../practice/README.md). В нём те же команды применяются уже к реальным файлам задачи.
 
 Справка по рассмотренным командам: [`add_executable`](https://cmake.org/cmake/help/latest/command/add_executable.html), [`add_library`](https://cmake.org/cmake/help/latest/command/add_library.html), [`add_subdirectory`](https://cmake.org/cmake/help/latest/command/add_subdirectory.html), [`target_link_libraries`](https://cmake.org/cmake/help/latest/command/target_link_libraries.html), [`target_include_directories`](https://cmake.org/cmake/help/latest/command/target_include_directories.html) и [`target_compile_features`](https://cmake.org/cmake/help/latest/command/target_compile_features.html).
