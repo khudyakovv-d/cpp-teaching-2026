@@ -13,10 +13,10 @@ add_executable(
 
 target_compile_features(lab0a PRIVATE cxx_std_20)
 
-target_include_directories(
-    lab0a
-    PRIVATE
-        src/module2
-)
+# target_include_directories(
+#     lab0a
+#     PRIVATE
+#         src/module2
+# )
 
 target_link_libraries(lab0a PRIVATE module1)

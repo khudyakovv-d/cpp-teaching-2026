@@ -14,8 +14,8 @@ int main()
     std::cout << getMyName() << '\n'; // (A)
     std::cout << Module2::getMyName() << '\n';
 
-    // using namespace Module2;       // (B)
-    // std::cout << getMyName() << '\n'; // COMPILATION ERROR (C)
+    using namespace Module2;       // (B)
+    std::cout << getMyName() << '\n'; // COMPILATION ERROR (C)
 
     using Module2::getMyName;
     std::cout << getMyName() << '\n'; // (D)

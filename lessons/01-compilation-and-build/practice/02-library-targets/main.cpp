@@ -1,5 +1,5 @@
 #include "module1.h"
-#include "module2.h"
+#include "src/module2/module2.h"
 
 #include <iostream>
 
