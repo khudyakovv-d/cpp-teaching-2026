@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img">
+<title>Два аргумента TEST: набор и сценарий</title>
+<rect width="1000" height="250" rx="16" fill="#f8fafc"/>
+<g font-family="Arial, sans-serif" fill="#172033">
+<text x="30" y="42" font-size="25" font-weight="700">Имя набора + имя сценария = полное имя теста</text>
+<rect x="30" y="74" width="300" height="102" rx="12" fill="#e0f2fe"/>
+<rect x="350" y="74" width="620" height="102" rx="12" fill="#ede9fe"/>
+<text x="46" y="106" font-size="20" font-weight="700">VectorTest</text>
+<text x="46" y="139" font-size="18">Первый аргумент: набор</text>
+<text x="366" y="106" font-size="20" font-weight="700">DefaultConstructorCreatesEmptyVector</text>
+<text x="366" y="139" font-size="18">Второй аргумент: проверяемое поведение</text>
+<text x="30" y="217" font-size="20"><tspan fill="#0369a1">VectorTest</tspan><tspan>.</tspan><tspan fill="#6d28d9">DefaultConstructorCreatesEmptyVector</tspan></text>
+</g></svg>
