@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="490" viewBox="0 0 1000 490" role="img" aria-labelledby="title description">
+  <title id="title">Базовые части в обычном и виртуальном ромбе</title>
+  <desc id="description">Слева TeachingAssistant содержит Student и Employee, у каждого своя часть Person. Справа обе ветви разделяют одну виртуальную Person. Линии показывают связи частей, а не размещение в памяти.</desc>
+  <defs>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #172033; font-size: 20px; text-anchor: middle; }
+      .heading { font-size: 24px; font-weight: bold; }
+      .note { font-size: 18px; }
+      .part { fill: white; stroke: #475569; stroke-width: 2; }
+      .link { fill: none; stroke: #475569; stroke-width: 2; }
+    </style>
+  </defs>
+  <rect width="1000" height="490" fill="#f8fafc"/>
+  <text x="250" y="42" class="heading">Обычное наследование</text>
+  <text x="750" y="42" class="heading">Виртуальное наследование</text>
+  <rect x="30" y="65" width="440" height="365" rx="12" fill="#eef2ff" stroke="#94a3b8"/>
+  <rect x="530" y="65" width="440" height="365" rx="12" fill="#ecfdf5" stroke="#94a3b8"/>
+  <text x="250" y="105">Объект TeachingAssistant</text>
+  <text x="750" y="105">Объект TeachingAssistant</text>
+  <rect class="part" x="60" y="145" width="170" height="155" rx="8"/>
+  <rect class="part" x="270" y="145" width="170" height="155" rx="8"/>
+  <text x="145" y="180">Student</text>
+  <text x="355" y="180">Employee</text>
+  <rect class="part" x="75" y="205" width="140" height="70" rx="6"/>
+  <rect class="part" x="285" y="205" width="140" height="70" rx="6"/>
+  <text x="145" y="233">Person</text><text x="145" y="260" style="font-size:16px">«Анна Иванова»</text>
+  <text x="355" y="233">Person</text><text x="355" y="260" style="font-size:16px">«Анна Смирнова»</text>
+  <text x="250" y="350" class="note">Два независимых поля name.</text>
+  <text x="250" y="380" class="note">Имена человека разошлись.</text>
+  <rect class="part" x="560" y="145" width="170" height="65" rx="8"/>
+  <rect class="part" x="770" y="145" width="170" height="65" rx="8"/>
+  <text x="645" y="185">Student</text><text x="855" y="185">Employee</text>
+  <path class="link" d="M645,210 L645,235 L720,270 M855,210 L855,235 L780,270"/>
+  <rect class="part" x="665" y="270" width="170" height="70" rx="6"/>
+  <text x="750" y="298">Person</text><text x="750" y="325" style="font-size:16px">«Анна Иванова»</text>
+  <text x="750" y="380" class="note">Одно имя для обеих ролей.</text>
+  <text x="500" y="467" class="note">После изменения имени через Student: слева два поля name, справа одно.</text>
+</svg>

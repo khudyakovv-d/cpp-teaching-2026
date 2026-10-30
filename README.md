@@ -10,6 +10,7 @@
 4. [Перемещение и умные указатели](lessons/04-move-and-smart-pointers/README.md) — конструктор перемещения, перемещающее присваивание и владение через `unique_ptr`, `shared_ptr` и `weak_ptr`.
 5. [Юнит-тесты с Google Test](lessons/05-unit-tests/README.md) — проверки поведения `Vector`, фикстуры, параметры и запуск через CTest.
 6. [Наследование и полиморфизм](lessons/06-inheritance/README.md) — отношения между объектами, базовый интерфейс, виртуальные функции и владение фигурами.
+7. [Множественное наследование и преобразования типов](lessons/07-multiple-inheritance-and-casts/README.md) — независимые интерфейсы, проблема ромба, виртуальная база и приведения вверх, вниз и между ветвями иерархии.
 
 ## Как устроен репозиторий
 
@@ -57,14 +58,22 @@ lessons/
 │       ├── README.md
 │       ├── CMakeLists.txt
 │       └── test.cpp
-└── 06-inheritance/
+├── 06-inheritance/
+│   ├── README.md
+│   ├── theory/
+│   │   └── 01-…md, 02-…md, 03-…md
+│   └── practice/
+│       ├── README.md
+│       ├── CMakeLists.txt
+│       └── shapes.h, shapes.cpp и main.cpp
+└── 07-multiple-inheritance-and-casts/
     ├── README.md
     ├── theory/
     │   └── 01-…md, 02-…md, 03-…md
     └── practice/
         ├── README.md
         ├── CMakeLists.txt
-        └── shapes.h, shapes.cpp и main.cpp
+        └── main.cpp
 ```
 
 Для сборки открывайте в VS Code папку конкретного проекта с `CMakeLists.txt`. В первом занятии это одна из двух версий внутри `practice`, в остальных — сама папка `practice`.

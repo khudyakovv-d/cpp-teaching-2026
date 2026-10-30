@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="580" viewBox="0 0 800 580" role="img" aria-labelledby="title description">
+  <title id="title">Ромб при обычном наследовании</title>
+  <desc id="description">Вверху Person с полем name, ниже слева Student и справа Employee, внизу TeachingAssistant. TeachingAssistant наследует Student и Employee, каждая ветвь наследует Person. Стрелки с пустыми треугольниками направлены к базам. Два пути к Person при обычном наследовании дают две отдельные базовые части в одном TeachingAssistant.</desc>
+  <defs>
+    <marker id="base" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto">
+      <path d="M1,1 L14,8 L1,15 Z" fill="white" stroke="#475569" stroke-width="1.4"/>
+    </marker>
+    <style>
+      text { font-family: Arial, sans-serif; fill: #172033; text-anchor: middle; }
+      .name { font-size: 24px; font-weight: bold; }
+      .box { fill: white; stroke: #475569; stroke-width: 2; }
+      .edge { fill: none; stroke: #475569; stroke-width: 2; marker-end: url(#base); }
+      .note { font-size: 18px; }
+    </style>
+  </defs>
+  <rect width="800" height="580" fill="#f8fafc"/>
+  <text x="400" y="39" font-size="28" font-weight="bold">Ромб при обычном наследовании</text>
+  <path class="edge" d="M170,240 L335,150"/>
+  <path class="edge" d="M630,240 L465,150"/>
+  <path class="edge" d="M330,410 L210,300"/>
+  <path class="edge" d="M470,410 L590,300"/>
+  <rect class="box" x="280" y="70" width="240" height="80"/>
+  <text class="name" x="400" y="101">Person</text>
+  <path d="M280,113 H520" fill="none" stroke="#475569" stroke-width="2"/>
+  <text x="400" y="139" font-size="21">+ name: string</text>
+  <rect class="box" x="70" y="240" width="200" height="60"/>
+  <text class="name" x="170" y="278">Student</text>
+  <rect class="box" x="530" y="240" width="200" height="60"/>
+  <text class="name" x="630" y="278">Employee</text>
+  <rect class="box" x="250" y="410" width="300" height="60"/>
+  <text class="name" x="400" y="448">TeachingAssistant</text>
+  <text class="note" x="400" y="515">Пустой треугольник направлен от наследника к базе.</text>
+  <text class="note" x="400" y="546">При обычном наследовании в ассистенте две части Person.</text>
+</svg>
