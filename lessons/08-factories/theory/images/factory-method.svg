@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="660" viewBox="0 0 1120 660" role="img">
+  <title>Фабричный метод: продукты и их фабрики</title>
+  <desc>ProductA и ProductB наследуют Product. FactoryA и FactoryB наследуют Factory. Пунктирные стрелки создания идут от FactoryA к ProductA и от FactoryB к ProductB.</desc>
+  <defs>
+    <marker id="general" markerWidth="16" markerHeight="16" refX="14" refY="8" orient="auto">
+      <path d="M1,1 L14,8 L1,15 Z" fill="white" stroke="#475569" stroke-width="1.4"/>
+    </marker>
+    <marker id="dependency" markerWidth="11" markerHeight="11" refX="10" refY="5.5" orient="auto">
+      <path d="M1,1 L10,5.5 L1,10" fill="none" stroke="#475569" stroke-width="1.4"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="660" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="28" y="39" font-size="25" font-weight="700">Фабричный метод: две иерархии классов</text>
+    <g fill="white" stroke="#475569" stroke-width="1.7">
+      <rect x="400" y="75" width="320" height="100"/>
+      <path d="M400,122 H720"/>
+      <rect x="40" y="245" width="320" height="110"/>
+      <path d="M40,292 H360"/>
+      <rect x="760" y="245" width="320" height="110"/>
+      <path d="M760,292 H1080"/>
+      <rect x="400" y="480" width="320" height="100"/>
+      <path d="M400,527 H720"/>
+      <rect x="40" y="480" width="320" height="100"/>
+      <path d="M40,527 H360"/>
+      <rect x="760" y="480" width="320" height="100"/>
+      <path d="M760,527 H1080"/>
+    </g>
+    <g font-size="23" font-weight="700" text-anchor="middle">
+      <text x="560" y="108" font-style="italic">Product</text>
+      <text x="200" y="278">ProductA</text>
+      <text x="920" y="278">ProductB</text>
+      <text x="560" y="513" font-style="italic">Factory</text>
+      <text x="200" y="513">FactoryA</text>
+      <text x="920" y="513">FactoryB</text>
+    </g>
+    <g font-size="19">
+      <text x="418" y="154">+ describe(): string</text>
+      <text x="58" y="325">- value_: int</text>
+      <text x="778" y="318">- text_: string</text>
+      <text x="778" y="343">- count_: int</text>
+      <text x="418" y="559">+ create()</text>
+      <text x="58" y="559">+ create()</text>
+      <text x="778" y="559">+ create()</text>
+      <text x="216" y="421">создаёт</text>
+      <text x="936" y="421">создаёт</text>
+    </g>
+    <g fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#general)">
+      <path d="M200,245 V210 H460 V177"/>
+      <path d="M920,245 V210 H660 V177"/>
+      <path d="M360,547 H398"/>
+      <path d="M760,547 H722"/>
+    </g>
+    <g fill="none" stroke="#475569" stroke-width="1.7" stroke-dasharray="7 5" marker-end="url(#dependency)">
+      <path d="M200,480 V357"/>
+      <path d="M920,480 V357"/>
+    </g>
+    <text x="28" y="619" font-size="18">Пустой треугольник — наследование; пунктир — зависимость создания.</text>
+    <text x="28" y="645" font-size="18">Все create() возвращают std::unique_ptr&lt;Product&gt;.</text>
+  </g>
+</svg>

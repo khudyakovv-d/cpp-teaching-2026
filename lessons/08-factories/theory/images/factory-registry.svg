@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img">
+  <title>Реестр выбирает настроенную фабрику</title>
+  <desc>RegistryFactory по ключу A обращается к FactoryA с value 25, которая создаёт ProductA. По ключу B он обращается к FactoryB с text hello и count 3, которая создаёт ProductB.</desc>
+  <defs>
+    <marker id="call" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L9,5 L0,10 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="480" fill="#f8fafc"/>
+  <g font-family="Arial, sans-serif" fill="#172033">
+    <text x="28" y="39" font-size="25" font-weight="700">Реестр: выбор по ключу и отдельное создание</text>
+    <g fill="white" stroke="#475569" stroke-width="1.7">
+      <rect x="40" y="160" width="290" height="120" rx="8"/>
+      <rect x="430" y="75" width="240" height="100" rx="8"/>
+      <rect x="430" y="300" width="240" height="100" rx="8"/>
+      <rect x="800" y="75" width="280" height="100" rx="8"/>
+      <rect x="800" y="300" width="280" height="100" rx="8"/>
+    </g>
+    <g font-size="22" font-weight="700" text-anchor="middle">
+      <text x="185" y="198">RegistryFactory</text>
+      <text x="550" y="110">FactoryA</text>
+      <text x="550" y="335">FactoryB</text>
+      <text x="940" y="110">ProductA</text>
+      <text x="940" y="335">ProductB</text>
+    </g>
+    <g font-size="18" text-anchor="middle">
+      <text x="185" y="232">create(type)</text>
+      <text x="185" y="258">реестр владеет фабриками</text>
+      <text x="550" y="146">value = 25</text>
+      <text x="550" y="370">text = "hello", count = 3</text>
+      <text x="940" y="146">собственное value = 25</text>
+      <text x="940" y="370">свои text и count</text>
+      <text x="389" y="152">A</text>
+      <text x="389" y="323">B</text>
+      <text x="735" y="111">create()</text>
+      <text x="735" y="336">create()</text>
+    </g>
+    <g fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#call)">
+      <path d="M330,193 H380 V125 H428"/>
+      <path d="M330,247 H380 V350 H428"/>
+      <path d="M670,125 H798"/>
+      <path d="M670,350 H798"/>
+    </g>
+    <text x="28" y="443" font-size="18">Стрелки показывают выбор и создание. Настройки сохранены при регистрации.</text>
+    <text x="28" y="469" font-size="18">Каждый вызов create() выдаёт новый продукт его отдельному владельцу.</text>
+  </g>
+</svg>
